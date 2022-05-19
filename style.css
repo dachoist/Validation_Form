@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    background-image: url('https://wallpaperaccess.com/full/2314950.jpg');
+    background-size: 300%;
+    animation: move 30s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        background-position: left;
+    }
+    to {
+        background-position: right;
+    }
+}
+
+h1 {
+    /* color: darkblue; */
+    font-weight: 300;
+    -webkit-text-fill-color: darkblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: aliceblue;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 450px;
+    max-width: 600px;
+    font-weight: 600;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+div > input {
+    padding: 5px 5px;
+    font-style: italic;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: 1px solid darkblue;
+    outline-offset: 1px;
+}
+
+div > button {
+    padding: 5px 5px;
+    font-style: italic;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: 1px solid darkblue;
+    outline-offset: 1px;   
+}
+
+div ul {
+    color: red;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    list-style-type: none;
+}
+
+label {
+    color: white;
+}
+
+.error_message {
+    font-size: 10px;
+    color: white;
+    border: none;
+    outline: 3px solid red;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    animation: shake 300ms;
+}
+
+@keyframes shake {
+    25% {transform: translateX(300px); }
+    50% {transform: translateX(-20px); }
+    75% {transform: translateX(20px); }
+}
